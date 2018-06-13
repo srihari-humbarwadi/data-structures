@@ -14,11 +14,15 @@ class Stack(object):
         self.stack.append(data)
 
     def pop(self):
+        if len(self.stack) == 0:
+            return
         data = self.stack[-1]
         del self.stack[-1]
         return data
 
     def peek(self):
+        if len(self.stack) == 0:
+            return
         return self.stack[-1]
 
     def Size(self):
