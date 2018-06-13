@@ -36,7 +36,7 @@ class LinkedList(object):
             return
         currentNode = self.head
         while currentNode is not None:
-            print(currentNode.data + " ", end="")
+            print(currentNode.data, "", end="")
             currentNode = currentNode.nextNode
 
     def remove(self, data):
@@ -47,9 +47,11 @@ class LinkedList(object):
         previousNode = None
         while currentNode.data != data:
             previousNode = currentNode
+            if currentNode.nextNode is None:
+                return
             currentNode = currentNode.nextNode
         if previousNode is None:
-            currentNode.nextNode = self.head
+            self.head = currentNode.nextNode
         else:
             previousNode.nextNode = currentNode.nextNode
 
@@ -59,13 +61,13 @@ class LinkedList(object):
 
 la = LinkedList()
 la.insertAtStart(10)
-la.insertAtStart(22)
-la.Size()
-la.insertAtEnd(1)
-la.insertAtEnd(1220)
+la.insertAtStart(20)
+la.insertAtStart(30)
+la.insertAtStart(40)
+la.insertAtStart(50)
 la.Size()
 la.traverse()
-la.remove(22)
+la.remove(30)
 la.traverse()
 la.Size()
 
