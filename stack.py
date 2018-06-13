@@ -41,3 +41,5 @@ print(sa.pop())
 print(sa.pop())
 sa.Display()
 print(sa.peek())
+print(sa.Size())
+
