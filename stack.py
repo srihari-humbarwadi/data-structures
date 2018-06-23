@@ -1,4 +1,4 @@
-# Linked list implementation
+# Stack implementation
 # author Srihari Humbarwadi
 # Date 13/06/2018
 

@@ -1,6 +1,6 @@
-# Linked list implementation
+# Queue implementation
 # author Srihari Humbarwadi
-# Date 23/06/2018
+# Date 22/06/2018
 
 
 class Queue(object):
